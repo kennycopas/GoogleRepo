@@ -1,0 +1,9 @@
+Trie Tree -
+  A Trie Tree is a tree in which each node represents a character and each path represents a string. Each node has a list of pointers that point to child nodes. These child nodes are referenced directly from the list by index. Because any given node's list of pointers is initialized at a length of 26 full of None, a child node can be created and inserted at a specified index. The index that a child node is inserted at is the same as the index of the character in the alphabet (Child Node 'a' inserts into index 0, Child Node 'e' inserts into index 4). This way, you can check for the existence of a pointer to a specific character by checking the element at the index of the character value (ord(char) - ord('a')).
+  Example - For the word "cat", the trie node path would be as follows:
+  - The root node is '', and the only element in this node's list is a reference to the 'c' node at index 2.
+  - The next node is 'c', and the only element in this node's list is a reference to the 'a' node at index 0.
+  - The next node is 'a', and the only element in this node's list is a reference to the 't' node at index 19.
+  - The next node is 't', and this node's list is empty.
+
+  Visualization - https://www.cs.usfca.edu/~galles/visualization/Trie.html
